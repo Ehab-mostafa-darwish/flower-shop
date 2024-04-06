@@ -322,3 +322,31 @@ footer span {
      grid-template-columns:auto auto auto  auto;
   }
 }
+@media (max-width:320px) {
+  .shop {
+    width:320px ;
+  }
+  .shop div :first-child {
+ font-size :small;
+ padding-left: 0px;
+  }
+  .shop div nav img {
+width: 140px;
+}
+.head {
+    width: 320px;
+}
+.head div p {
+    font-size: small;
+ }
+ .head div button {
+    margin:0px 20px 0px 10px;
+ }
+ .plants a {
+    display: block;
+    margin-bottom: 10px;
+ }
+ .product .line {
+    left: 39%;
+ }
+}
