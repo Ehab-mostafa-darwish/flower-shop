@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* start nav*/
+.nav{
+    display: flex;
+    border: 1px solid silver;
+    box-shadow: 0px 13px 11px -10px rgb(207, 200, 200);
+    padding-left: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(253, 253, 253);
+    z-index: 9;
+}
+.nav .div2{
+    margin-left: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav .div2 a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    padding:0px 5px 10px 5px;
+}
+.nav .div2 .active{
+    border-bottom: 2px solid black;
+    /* padding-bottom: 10px; */
+}
+.nav .div2 a:hover{
+    border-bottom: 2px solid rgb(151, 144, 144);
+    color: rgb(77, 73, 73);
+}
+.nav .div1{
+    display: flex;
+    padding: 10px 0px;
+    border-right: 1px solid silver;
+   
+}
+.nav .div1 h4{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+/*end nav*/
+
+/*--start the head--*/
+.head{
+   padding-top: 300px;
+   padding-left: 30px;
+    background-image: url(../4f28df8f-511a-4083-8b8d-e1d3aaec7538.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-bottom: 50px;
+}
+.head div{
+    margin-left: 30px;
+}
+.head div h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.head div p{
+    color: rgb(109, 105, 105);
+    font-weight: bold;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.head div p span{
+    color: green;
+}
+.head div button{
+    border: none;
+    padding: 10px 13px ;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    margin-left: 85px;
+}
+.head div button:hover{
+    opacity:.9;
+}
+.head i{
+    margin-top: 30px;
+    font-size: 35px;
+    color: rgb(156, 153, 153);
+    cursor: pointer;
+}
+.head .fa-chevron-right{
+   position: absolute;
+   right: 20px;
+}
+.head i:hover{
+    color: rgba(0, 128, 0, 0.733);
+}
+/*--end the head--*/
+
+/*--start the content--*/
+.services {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.services div i{
+    margin-right: 20px;
+    color: rgb(111, 184, 111);
+}
+.services div p{
+    margin-left: 40px;
+    margin-top: 10px;
+    color: rgb(163, 160, 160);
+}
+.services div h3{
+    display: inline;
+    text-transform: capitalize;
+}
+.services div{
+    border: 1px solid rgb(224, 219, 219);
+    box-shadow: 1px 1px 3px rgb(177, 175, 175);
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+/*--end the content--*/
+
+/*--start the shop--*/
+.shop{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    width: 78%;
+    margin: auto;
+}
+.shop div{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(227, 233, 233);
+    margin-top: 80px;
+    position: relative;
+    height: 250px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px silver;
+}
+.shop div nav img{
+    position:absolute;
+    right: 0;
+    height: 250px;
+    border-top-right-radius: 4px;
+}
+.shop div nav:first-child{
+    padding: 40px 0px 0px 20px;
+}
+.shop div nav:first-child h3{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.shop div nav:first-child h1{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.shop div nav:first-child a{
+    color: rgb(71, 70, 70);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.shop div nav:first-child a:hover{
+    color: green;
+}
+.product {
+    margin: 50px 0px;
+    text-align: center;
+}
+.line {
+    border-top: 3px solid gray;
+    width: 80px;
+    position:absolute;
+    left: 47%;
+    margin-top: 10px;
+}
+.plants {
+    text-align: center;
+}
+.plants a {
+    margin: 0px 20px;
+    font-size:17px;
+    text-decoration: none;
+    color: black;
+}
+.plants a:first-child {
+color: green !important;
+text-decoration: underline !important;
+}
+footer {
+    display:grid;
+    grid-template-columns:auto auto auto auto ;
+    margin: 20px 20px;
+    gap: 10px;
+}
+footer div {
+    background-color: rgba(228, 218, 218, 0.925);
+    position: relative;
+}
+footer span {
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(211, 24, 24, 0.733);
+    width: 50px;
+    text-align: center;
+}
+@media(max-width : 480px){
+    .services{
+       display: block;
+       width: 90%;
+       margin: auto;
+       justify-items: center;
+    }
+    .services div{
+        margin-bottom: 20px;
+    }
+    .shop {
+        display: block;
+    }
+    footer{
+       grid-template-columns: auto;
+    }
+    .nav .div2{
+        display: none;
+    }
+}
+@media(min-width : 480px){
+    .services{
+       display: block;
+       width: 90%;
+       margin: auto;
+       justify-items: center;
+    }
+    .services div{
+        margin-bottom: 20px;
+    }
+    .shop {
+        display: block;
+    }
+    footer{
+        grid-template-columns: auto;
+     }
+     .nav .div2{
+        display: none;
+    }
+}
+@media(min-width:768px){
+    .nav .div2{
+        display: none;
+    }
+    .services{
+        display: grid;
+        width: 90%;
+        margin: auto;
+        justify-items: center;
+     }
+     .services div{
+         margin-bottom: 20px;
+     }
+     .shop {
+         display: grid;
+         grid-template-columns: 600px;
+     }
+     footer{
+         grid-template-columns: auto auto;
+      }
+}
+@media(min-width:1024px){
+    .nav .div2{
+        display: block;
+    }
+    .services{
+        display: grid;
+        width: 90%;
+        margin: auto auto auto;
+        justify-items: center;
+     }
+     .services div{
+         margin-bottom: 20px;
+     }
+     .shop {
+         display: grid;
+         grid-template-columns: auto auto;
+     }
+     footer{
+         grid-template-columns:auto auto  auto;
+      }
+}
+@media(min-width:1200px){
+    .nav .div2{
+        display: block;
+    }
+    .services{
+    display: grid;
+    width: 90%;
+    margin: auto auto auto;
+    justify-items: center;
+ }
+ .services div{
+     margin-bottom: 20px;
+ }
+ .shop {
+     display: grid;
+     grid-template-columns: auto auto;
+ }
+ footer{
+     grid-template-columns:auto auto auto  auto;
+  }
+}
