@@ -231,6 +231,19 @@ footer span {
     }
     .shop {
         display: block;
+        width: 100%;
+    }
+    .shop nav img {
+        width: 200px;
+    }
+    .shop div :first-child{
+        width:50%;
+        padding-left: 0px;
+        margin-left: 0px;
+        font-size: medium;
+    }
+    .head div button {
+        margin:0px 20px 0px 10px;
     }
     footer{
        grid-template-columns: auto;
@@ -238,6 +251,13 @@ footer span {
     .nav .div2{
         display: none;
     }
+    .plants a {
+        display: block;
+        margin-bottom: 10px;
+     }
+     .product .line {
+        left: 39%;
+     }
 }
 @media(min-width : 480px){
     .services{
@@ -256,13 +276,17 @@ footer span {
         grid-template-columns: auto;
      }
      .nav .div2{
-        display: none;
-    }
+        margin-left: 5px;
+        justify-content: space-between;
+        padding-left:5px ;
+        padding-right: 5px;    }
 }
 @media(min-width:768px){
     .nav .div2{
-        display: none;
-    }
+        margin-left: 5px;
+        justify-content: space-between;
+        padding-left:5px ;
+        padding-right: 5px;    }
     .services{
         display: grid;
         width: 90%;
@@ -349,4 +373,9 @@ width: 140px;
  .product .line {
     left: 39%;
  }
+}
+@media (max-width:746px){
+.nav .div2 {
+    display: none;
+}
 }
